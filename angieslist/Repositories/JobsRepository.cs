@@ -37,5 +37,19 @@ namespace angieslist.Repositories
         return j;
       }, new {id}).ToList();
     }
+    internal List<Job> GetAllJobs()
+    {
+      string sql = @"
+      SELECT
+        j*,
+        a*
+        FROM jobs j
+        JOIN accounts a ON j.creatorId = a.id;";
+        return _db.Query<Job, Profile, Job>(sql, (j, p) =>
+        {
+          j.Profile = p;
+          return j;
+        }, splitOn: "id").ToList();
+    }
   }
 }
