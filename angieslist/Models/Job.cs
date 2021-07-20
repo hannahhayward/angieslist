@@ -14,6 +14,6 @@ namespace angieslist.Models
     public DateTime UpdatedAt {get; set;}
     public string CreatorId {get;set;}
     //virtuals below here
-    public Profile Creator {get; set;}
+    public Profile Profile {get; set;}
   }
 }
