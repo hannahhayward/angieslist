@@ -6,6 +6,6 @@ namespace angieslist.Models
     public string Title {get;set;}
     public string Experience {get;set;}
     //virtuals below here
-    public Profile Creator {get;set;}
+    public Profile Profile {get;set;}
   }
 }
