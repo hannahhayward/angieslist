@@ -1,0 +1,38 @@
+$body-bg: #e5e5e5;
+$primary: #3ba5dc;
+$secondary: #ff3697;
+$danger: #eb5757;
+$success: #27ae60;
+$warning: #ff7f50;
+$info: #00c9bd;
+$dark: #313130;
+$grey: #cbcbcb;
+$dark-grey: #696969;
+$white: #fff;
+$light: #f8f9fa;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "dark": $dark,
+  "grey": $grey,
+  "dark-grey": $dark-grey,
+  "white": $white,
+  "light": $light
+);
+
+$color-ranges: (
+  0: 0,
+  5: 5,
+  10: 10,
+  15: 15,
+  20: 20,
+  25: 25,
+  30: 30,
+  35: 35,
+  40: 40,
+);
